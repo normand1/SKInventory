@@ -20,51 +20,44 @@ class GameScene: SKScene {
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
+                
+        InventorySpriteNode.addNewItemNamed(InventoryItemName.hammer_gold)
+        InventorySpriteNode.addNewItemNamed(InventoryItemName.hammer_gold)
+        InventorySpriteNode.addNewItemNamed(InventoryItemName.flail_bronze)
+        InventorySpriteNode.addNewItemNamed(InventoryItemName.ore_emerald)
+        InventorySpriteNode.addNewItemNamed(InventoryItemName.ore_emerald)
+
         
         self.backgroundColor = SKColor.magentaColor()
         self.anchorPoint = CGPointMake(0.5, 0.5)
 
-        var wholeInventoryNode = SKSpriteNode()
+        var inventorySpriteNode = InventorySpriteNode(size: CGSizeMake(0, 0))
+        self.addChild(inventorySpriteNode)
+        inventorySpriteNode.showInventory()
         
-        let columns = 10 //change number of columns (rows are auto-calced based on size of view)
+        var slotsSpriteNode = SlotsSpriteNode(size: CGSizeMake(0, 0))
+        self.addChild(slotsSpriteNode)
+        slotsSpriteNode.showInventory()
+        
+        inventorySpriteNode.delegate = slotsSpriteNode
+    }
     
-        let squareWidth = self.frame.size.width / CGFloat(columns)
-        
-        let rows = Int(self.frame.size.height / squareWidth)
-        wholeInventoryNode.size = CGSizeMake(self.frame.size.width, CGFloat(rows) * squareWidth)
-        wholeInventoryNode.anchorPoint = CGPointMake(0.5,0.5)
-        wholeInventoryNode.position = CGPointMake(0, 0)
-        wholeInventoryNode.color = UIColor.greenColor()
-        
-        self.addChild(wholeInventoryNode)
+//    
+//    override func touchesBegan(touches: Set<NSObject>,
+//        withEvent event: UIEvent) {
+//            let touch = touches.first as! UITouch
+//             var nodes = nodesAtPoint(touch.locationInView(InventorySpriteNode.view))
+//            for var i = 0; i < nodes.count; i++ {
+//                if var tempNode = nodes[i] as? SKShapeNode {
+//                    println("name: \(tempNode.name)")
+//                    tempNode.fillColor = UIColor.whiteColor()
+//                }
+//
+//            }
 
-        for var i = 0; i < columns; i++ {
-            for var j = 0; j < rows; j++ {
-                var inventoryItem = SKShapeNode(rectOfSize: CGSize(width: squareWidth, height: squareWidth))
-                var updatedX = wholeInventoryNode.frame.origin.x + (CGFloat(inventoryItem.frame.size.width) / CGFloat(2)) + squareWidth * CGFloat(i)
-                var updatedY = CGFloat(wholeInventoryNode.frame.size.height - (CGFloat(inventoryItem.frame.size.height))) / CGFloat(2) - (squareWidth * CGFloat(j))
-                inventoryItem.position = CGPoint(x:updatedX, y:updatedY )
-                inventoryItem.fillColor = UIColor.blackColor()
-                inventoryItem.strokeColor = UIColor.whiteColor()
-                inventoryItem.lineWidth = 2.0
-                
-                wholeInventoryNode.addChild(inventoryItem)
-                
-                var imageNode = SKSpriteNode(imageNamed: "sword_diamond")
-                inventoryItem.addChild(imageNode)
-                imageNode.size = inventoryItem.frame.size
-            }
-        }
-        
-    }
+            
+//    }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        
-        for touch in (touches as! Set<UITouch>) {
-            let location = touch.locationInNode(self)
-        }
-    }
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */

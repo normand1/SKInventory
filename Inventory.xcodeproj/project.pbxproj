@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A69063A1B80EBAE003A3AEA /* InventoryItemNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6906391B80EBAE003A3AEA /* InventoryItemNode.swift */; };
+		4A69063C1B80FD9E003A3AEA /* SlotsSpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69063B1B80FD9E003A3AEA /* SlotsSpriteNode.swift */; };
 		4AB67C401B7F00D000EFAF57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB67C3F1B7F00D000EFAF57 /* AppDelegate.swift */; };
-		4AB67C421B7F00D000EFAF57 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4AB67C411B7F00D000EFAF57 /* GameScene.sks */; };
 		4AB67C441B7F00D000EFAF57 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB67C431B7F00D000EFAF57 /* GameScene.swift */; };
 		4AB67C461B7F00D000EFAF57 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB67C451B7F00D000EFAF57 /* GameViewController.swift */; };
 		4AB67C491B7F00D000EFAF57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB67C471B7F00D000EFAF57 /* Main.storyboard */; };
 		4AB67C4B1B7F00D000EFAF57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB67C4A1B7F00D000EFAF57 /* Images.xcassets */; };
 		4AB67C4E1B7F00D000EFAF57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AB67C4C1B7F00D000EFAF57 /* LaunchScreen.xib */; };
 		4AB67C5A1B7F00D000EFAF57 /* InventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB67C591B7F00D000EFAF57 /* InventoryTests.swift */; };
+		4AB67C961B804F9200EFAF57 /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB67C951B804F9200EFAF57 /* InventoryItem.swift */; };
+		4AB67C981B8051CB00EFAF57 /* InventorySpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB67C971B8051CB00EFAF57 /* InventorySpriteNode.swift */; };
+		4AB67C9A1B805DB200EFAF57 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB67C991B805DB200EFAF57 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A6906391B80EBAE003A3AEA /* InventoryItemNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryItemNode.swift; sourceTree = "<group>"; };
+		4A69063B1B80FD9E003A3AEA /* SlotsSpriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotsSpriteNode.swift; sourceTree = "<group>"; };
 		4AB67C3A1B7F00D000EFAF57 /* Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB67C3E1B7F00D000EFAF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AB67C3F1B7F00D000EFAF57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4AB67C411B7F00D000EFAF57 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		4AB67C431B7F00D000EFAF57 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		4AB67C451B7F00D000EFAF57 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		4AB67C481B7F00D000EFAF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +45,9 @@
 		4AB67C531B7F00D000EFAF57 /* InventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InventoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB67C581B7F00D000EFAF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AB67C591B7F00D000EFAF57 /* InventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTests.swift; sourceTree = "<group>"; };
+		4AB67C951B804F9200EFAF57 /* InventoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = SOURCE_ROOT; };
+		4AB67C971B8051CB00EFAF57 /* InventorySpriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventorySpriteNode.swift; sourceTree = "<group>"; };
+		4AB67C991B805DB200EFAF57 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +89,13 @@
 		4AB67C3C1B7F00D000EFAF57 /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
+				4AB67C951B804F9200EFAF57 /* InventoryItem.swift */,
 				4AB67C3F1B7F00D000EFAF57 /* AppDelegate.swift */,
-				4AB67C411B7F00D000EFAF57 /* GameScene.sks */,
 				4AB67C431B7F00D000EFAF57 /* GameScene.swift */,
+				4AB67C991B805DB200EFAF57 /* GameState.swift */,
+				4AB67C971B8051CB00EFAF57 /* InventorySpriteNode.swift */,
+				4A69063B1B80FD9E003A3AEA /* SlotsSpriteNode.swift */,
+				4A6906391B80EBAE003A3AEA /* InventoryItemNode.swift */,
 				4AB67C451B7F00D000EFAF57 /* GameViewController.swift */,
 				4AB67C471B7F00D000EFAF57 /* Main.storyboard */,
 				4AB67C4A1B7F00D000EFAF57 /* Images.xcassets */,
@@ -200,7 +212,6 @@
 			files = (
 				4AB67C4E1B7F00D000EFAF57 /* LaunchScreen.xib in Resources */,
 				4AB67C4B1B7F00D000EFAF57 /* Images.xcassets in Resources */,
-				4AB67C421B7F00D000EFAF57 /* GameScene.sks in Resources */,
 				4AB67C491B7F00D000EFAF57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +232,12 @@
 			files = (
 				4AB67C441B7F00D000EFAF57 /* GameScene.swift in Sources */,
 				4AB67C461B7F00D000EFAF57 /* GameViewController.swift in Sources */,
+				4A69063C1B80FD9E003A3AEA /* SlotsSpriteNode.swift in Sources */,
+				4AB67C981B8051CB00EFAF57 /* InventorySpriteNode.swift in Sources */,
+				4AB67C9A1B805DB200EFAF57 /* GameState.swift in Sources */,
 				4AB67C401B7F00D000EFAF57 /* AppDelegate.swift in Sources */,
+				4AB67C961B804F9200EFAF57 /* InventoryItem.swift in Sources */,
+				4A69063A1B80EBAE003A3AEA /* InventoryItemNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +435,7 @@
 				4AB67C5F1B7F00D000EFAF57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AB67C601B7F00D000EFAF57 /* Build configuration list for PBXNativeTarget "InventoryTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +444,7 @@
 				4AB67C621B7F00D000EFAF57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
